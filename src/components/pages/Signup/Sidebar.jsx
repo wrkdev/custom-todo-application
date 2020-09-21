@@ -1,7 +1,6 @@
 import React from 'react';
-import Logo from "../../assets/images/wrkdev.jpg";
-import './css/Sidebar.css';
-import Input from '../common/Input';
+import Logo from './code2.png';
+import Input from '../../common/Input';
 
 const Sidebar = () => {
     return (
@@ -16,8 +15,16 @@ const Sidebar = () => {
                 <Input id="email" placeholder="Email" type="email" />
                 <Input id="pwd" placeholder="Password" type="password" />
                 <Input id="confirm" placeholder="Confirm Password" type="password" />
-                <button>Sign Up</button>
+                <button className="signup-button">Sign Up</button>
             </form>
+            <div className="lower">
+                <div className="terms">
+                    By signing up, I agree to the Privacy Policy <br /> and Terms of Service
+                </div>
+                <div className="signin">
+                    <h4 className="signin-h4">Already have an account? <span className="signin-span">Sign In</span></h4>
+                </div>
+            </div>
         </div>
     );
 };
